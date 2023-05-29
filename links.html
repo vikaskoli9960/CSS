@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Class</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: rgb(209, 33, 33);
+        }
+        a:visited {
+            color: rgb(53, 212, 28);
+        }
+        .button {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            background: lightblue;
+            color: black;
+            border-radius: 4px;
+            font: 600 1em/1 'system-ui' 
+        }
+        .button:hover {
+            background: dodgerblue;
+            color: white;
+        }
+        .wrapper {
+            display: flex;
+            gap: 8px;
+            margin: 10% 0;
+        }
+        .wrapper article {
+            padding: 8px;
+            background: lightblue;
+        }
+        .wrapper article:first-child {
+            background: lightgreen;
+        }
+        .wrapper article:last-child {
+            background: lightcoral;
+        }
+        .wrapper article:nth-child(2) {
+            background: lightgray;
+        }
+        .wrapper article:nth-child(odd) {
+            background: dodgerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0)" class="button">Click here</a>
+    <section class="wrapper">
+        <article>This is article 1</article>
+        <article>This is article 2</article>
+        <article>This is article 3</article>
+        <article>This is article 4</article>
+        <article>This is article 5</article>
+    </section>
+</body>
+</html>

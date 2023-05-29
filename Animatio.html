@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 15%;
+            transition: all 4s;
+        }
+        section {
+            width: 50px;
+            height: 50px;
+            background: #ea6bf5;
+            animation: circle 3s infinite;
+        }
+        wrapper {
+            align-items: center;
+            min-height: 200vh;
+        }
+
+        @keyframes simple {
+            from {
+                width: 30px;
+                height: 30px;
+                background: lightgreen;
+                margin-left: 0;
+                border-radius: 0;
+            }
+
+            to {
+                background: rgb(23, 133, 109);
+                margin-left: 90px;
+                border-radius: 70%;
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                background: rgb(236, 65, 65);
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(60deg);
+                border-radius: 0;
+            }
+
+            10% {
+                margin-left: 50px;
+                margin-top: 0;
+                background: rgb(255, 255, 255);
+                transform: rotate(60deg);
+                border-radius: 20%;
+            }
+
+            1% {
+                margin-left: 48px;
+                margin-top: 48px;
+                background: rgb(39, 235, 222);
+                transform: rotate(140deg);
+                border-radius: 30%;
+            }
+
+            30% {
+                margin-left: 0;
+                margin-top: 48px;
+                background: red;
+                transform: rotate(180deg);
+                border-radius: 50%;
+            }
+
+            40% {
+                margin-left: 0;
+                margin-top: 0;
+                background: rgb(0, 0, 0);
+                transform: rotate(360deg);
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <wrapper>
+        <section></section>
+    </wrapper>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Media queries</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 16px;
+        }
+
+        section {
+            background: rgb(0 0 0 / 10%);
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        @media screen and (min-width: 480px) {
+            body {
+                background: lightblue;
+            }
+            
+            main {
+                flex-direction: row;
+            }
+
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>This is Section 1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quam quo. Debitis veritatis pariatur tenetur assumenda beatae minima perferendis aliquid, ad inventore placeat amet quis rem voluptatum id magnam? Ea.</p>
+        </section>
+
+        <section>
+            <h1>This is Section 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quam quo. Debitis veritatis pariatur tenetur assumenda beatae minima perferendis aliquid, ad inventore placeat amet quis rem voluptatum id magnam? Ea.</p>
+        </section>
+
+        <section>
+            <h1>This is Section 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quam quo. Debitis veritatis pariatur tenetur assumenda beatae minima perferendis aliquid, ad inventore placeat amet quis rem voluptatum id magnam? Ea.</p>
+        </section>
+    </main>
+</body>
+
+</html>

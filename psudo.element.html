@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pseudo elements - css</title>
+    <style>
+        ::marker {
+            color: brown;
+        }
+
+        ::selection {
+            background: rgb(74, 214, 105);
+            color: white;
+        }
+
+        h1,
+        p {
+            margin: 10% 5% 4%;
+        }
+
+        h1:first-letter {
+            font-size: 3em;
+            font-weight: 700;
+            color: brown;
+        }
+
+        p:first-line {
+            font-variant: small-caps;
+            font-weight: 700;
+        }
+
+        p:before {
+            content: '"';
+        }
+
+        p:after {
+            content: icon;
+            display: block;
+            background: url(image.jpg/cobra-in-savannah-sunset-2ew22vf32misblso.jpg) no-repeat;
+            width: 24px;
+            height: 24px;
+        }
+    </style>This is some text
+</head>
+
+<body>
+    <h1>This is heading.</h1>
+    <p> A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorem quod sint corrupti ipsam quis magni
+        sit.
+    </p>
+    <ul>
+        <li>This is some text</li>
+        <li>This is some text</li>
+        <li>This is some text</li>
+    </ul>
+</body>
+
+</html>

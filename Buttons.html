@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Buttons</title>
+    <style>
+        body {
+            font-family: system-ui;
+        }
+
+        .button {
+            cursor: pointer;
+            font: 400 1em/1.5 'system-ui';
+            padding: 4px 16px;
+            margin: 8px;
+            display: inline-block;
+            background: darkcyan;
+            border: 0;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: rgb(0, 78, 78);
+            box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">Click here</button>
+    <a href="javascript:void(0)" class="button">Click here</a>
+    <input type="submit" class="button" value="Click here">
+    <input type="button" class="button" value="Click here">
+    <input type="reset" class="button" value="Click here">
+</body>
+
+</html>

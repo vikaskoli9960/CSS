@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attribute Selector -css</title>
+    <style>
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 16px;
+        }
+        a[name],
+        a:hover,
+        a[class^='top'] {
+            text-decoration: underline;
+        }
+        a[class$='top'] {
+            color: red
+        }
+
+        a[class*='top'] {
+            font-weight: 700;
+        }
+
+        a[class~='top'] {
+            color: rgb(17, 171, 28);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)" name="home">Anchor with name attribute</a>
+        <a href="javascript:void(0)" name="about">Anchor with name attribute</a>
+        <a href="javascript:void(0)">Anchor</a>
+        <a href="javascript:void(0)" class="topClass">Anchor with 'top' class at beginning</a>
+        <a href="javascript:void(0)" class="endtop">Anchor</a>
+        <a href="javascript:void(0)" class="top Class">Anchor with top</a>
+    </nav>
+   
+</body>
+</html>

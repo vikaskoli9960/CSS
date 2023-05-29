@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Image gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 16px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="gallery">
+        <section class="image-wrapper">
+            <img src="image.jpg/b86c875a24ce8afdcf18936f4fd83d11.jpg" alt="Person">
+        </section>
+        <section class="image-wrapper">
+            <img src="image.jpg/285e43f170363df4909d9474127b1c88.jpg" alt="Person">
+        </section>
+        <section class="image-wrapper">
+            <img src="image.jpg/673ca0eea47fe2249a1266772398278a.jpg" alt="Person">
+        </section>
+        <section class="image-wrapper">
+            <img src="image.jpg/85f4748c35359337691401615e8afd71.jpg" alt="Person">
+        </section>
+        <section class="image-wrapper">
+            <img src="image.jpg/da598ae994fdb35b11a881b145c5b1cf.jpg" alt="Person">
+        </section>
+        <section class="image-wrapper">
+            <img src="image.jpg/fcc9d9c189859844aa2141346b41190e.jpg" alt="Person">
+        </section>
+    </section>
+    </section>
+</body>
+
+</html>

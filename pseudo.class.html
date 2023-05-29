@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class - css</title>
+    <style>
+        * {
+            text-align: center;
+            background-color: rgb(93, 225, 252);
+                }
+          *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui;
+        }
+        a:hover {
+            color: blueviolet;
+        } 
+        a:active {
+            color: black;
+
+        }
+        a:visited {
+            color: aliceblue;
+        }
+        .botton {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            background: rgb(38, 228, 108);
+            color: brown;
+            border-radius: 5px;
+            font:501em/1 'sytstem-ui';
+            text-align: center;
+        }
+        .botton:hover {
+            background-color: rgb(164, 217, 50);
+        }
+        .wrapper {
+            display: flex;
+            gap:30px;
+            margin: 15% 0;
+        }
+        .wrapper article {
+            padding:25px;
+            background-color: rgb(224, 57, 171);
+        }
+        .wrapper article:first-child {
+            background-color: rgb(210, 136, 25);
+        }
+        .wrapper article:last-child {
+            background: lightcoral;
+        }
+        .wrapper article:nth-child(2) {
+            background: rgb(223, 59, 59);
+        }
+        .wrapper article:child(odd) {
+            background: rgb(234, 40, 173);
+            color: white;
+        }
+         </style>
+</head>
+<body>
+    <a href="javascript:void(0)" class="button">Click here</a>
+    <section class="wrapper">
+    <article>A</article>
+    <article>B</article>
+    <article>C</article>
+    <article>D</article>
+    <article>E</article>
+    </section>
+</body>
+</html>

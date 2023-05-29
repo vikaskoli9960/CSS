@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Box sizing</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        article {
+            background: lightblue;
+            width: 49%;
+            border: 1px solid;
+            display: inline-block;
+            text-align: center;
+            padding: 8px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 10% auto;
+            background: lightcoral;
+            border: 10px solid rgba(0 0 0 / 20%);
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>1</article>
+        <article>2</article>
+    </section>
+
+    <section class="box"></section>
+</body>
+
+</html>

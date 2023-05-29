@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --neon-color: #15F1E9;
+            --white-color: #fff;
+            --main-bacco: #051527;
+            --light-bacco: #0A2647;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #000;
+        }
+
+
+        .wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+            height: 550px;
+            background: transparent;
+            border: 4px solid var(--light-bacco);
+            border-radius: 15px;
+            transition: 0.5s;
+        }
+
+        .wrapper:hover {
+            border: 4px solid #00FFD1;
+            box-shadow: 0 0 20px #00FFD1,
+                inset 0 0 20px #31c6D4;
+
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            color: var(--white-color);
+            transition: 0.5s;
+        }
+
+        .wrapper:hover h2 {
+            color: #FFFF00;
+
+        }
+
+        .input-box {
+            position: relative;
+            width: 320px;
+            margin: 30px 0;
+
+        }
+
+        .input-box input {
+            width: 300px;
+            height: 50px;
+            border-radius: 7px;
+            background: transparent;
+            border: 2px solid var(--light-bacco);
+            outline: none;
+            font-size: 1em;
+            color: var(--white-color);
+            padding: 0 10px 0 35px;
+            transition: 0.5s;
+
+        }
+
+        .wrapper:hover .input-box input {
+            border: 2px solid #FFFF00;
+            box-shadow: 0 0 10px #FFFF00,
+                inset 0 0 10px #FFFF00;
+
+        }
+
+        .input-box input::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="" wrapper>
+        <form action="">
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <icon-icon name="person"></icon-icon>
+                </span>
+                <input type="text" placeholder="userName" required>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <icon-icon name="key"></icon-icon>
+                </span>
+                <input type="password" placeholder="password" required>
+            </div>
+            <div class="forgot-password">
+                <a href="#">forgot-password</a>
+            </div>
+            <button type="Submit">Login</button>
+            <div class="registration-link">
+                <p>Don't have an account <a href="#">Signup</a> </p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

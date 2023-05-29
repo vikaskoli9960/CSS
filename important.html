@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - !important</title>
+    <style>
+        /*#id selector = 100*/
+        #text {
+            color: green !important;
+        }
+
+        /*.class selector = 10*/
+        .red {
+            color: red !important;
+        }
+
+        /*element selector = 1*/
+        p {
+            color: blue !important;
+            margin: 10%;
+        }
+
+        /*p + .red = 1 + 10*/
+        p.red {
+            color: red;
+        }
+
+        #text {
+            color: green;
+        }
+
+        #text {
+            color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text" class="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi dolores corrupti
+        accusamus quo dolorum iste numquam error sint quibusdam. Autem odit voluptatem, et sit quis eligendi nemo esse
+        magnam.</p>
+</body>
+
+</html>

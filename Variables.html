@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Varibles</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        :root {
+            --primary: rgb(255 0 162);
+            --secondary: #343434;
+        }
+        h1 {
+            color: var(--primary);
+            margin: 0;
+        }
+        p {
+            color: var(--secondary);
+        }
+        hr {
+            --primary: rgb(255 0 162 / 80% );
+            border: 0;
+            border-bottom: 1px solid var(--primary);
+            height: 0;
+        }
+        section {
+            margin: 16px;
+            padding: 16px;
+            background: rgb( 0 0 0 / 4%);
+            border-top: 10px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>This is heading</h1>
+        <hr>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus in voluptas amet non vel eaque incidunt,
+            reprehenderit et at, perferendis fugiat officiis magnam! Ipsam necessitatibus esse excepturi maxime nulla
+            nihil.</p>
+    </section>
+</body>
+
+</html>

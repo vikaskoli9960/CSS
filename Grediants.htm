@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Gradients</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .button {
+            border: 0;
+            padding: 8px 16px;
+            background: linear-gradient(to left, #30b9c6 20%, rgb(150, 224, 142) 80%);
+            color: white;
+            border-radius: 4px;
+            font: 600 16px/1.5 'system-ui';
+            margin: 10% auto;
+        }
+        .button:hover {
+            background: darkgreen;
+        }
+        .circle {
+            margin: 10% auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(rgb(57, 210, 88) 20%, rgb(52, 189, 37) 40%, rgb(0, 217, 255) );;
+
+            /* 
+            
+            Syntax:
+            linear-gradient(angle, 
+            color and start position in percentage,
+            color and start position in percentage,
+            color and start position in percentage);
+            
+            radial-gradient(
+                color and start position in percentage,
+                color and start position in percentage,
+                color and start position in percentage
+            );
+            
+            conic-gradient(
+                color and start position in percentage, 
+                color and start position in percentage, color and start position in percentage);
+            */
+
+            /*
+            linear-gradient(90deg, rgb(52, 189, 37) 0%, rgb(0, 217, 255) 20%, rgb(75, 86, 208) 40% );
+                conic-gradient(rgb(57, 210, 88) 20%, rgb(52, 189, 37) 40%, rgb(0, 217, 255) );
+            background: radial-gradient(rgb(57, 210, 88) 20%, rgb(52, 189, 37) 40%, rgb(0, 217, 255) );
+            background: radial-gradient(180deg, rgb(57, 210, 88) 20%, rgb(52, 189, 37) 40%, rgb(0, 217, 255) );*/
+        }
+    </style>
+</head>
+<body>
+    <center class="wrapper">
+        <section class="circle"></section>
+        <button class="button">Click here</button>
+    </center>
+</body>
+</html>

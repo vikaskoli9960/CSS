@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index - css</title>
+    <style>
+        .section {
+            width: 150px;
+            padding: 25px;
+            background-color: rgb(247, 120, 247);
+            position: absolute;
+            left: calc(50% - 100px);
+            top: calc(50% - 100px);
+            right: 0;
+        }
+        .top {
+            z-index: index 3;
+        }
+        .most-top {
+            z-index:2
+        }
+    </style>
+</head>
+<body>
+    <section class="section most top">
+        <h1>This is heading1</h1>
+        <p>this is paragraph</p>
+    </section>
+    <section class="section top">
+        <h1>This is heading2</h1>
+        <p>this is paragraph</p>
+    </section>
+    <section class="section most top">
+        <h1>This is heading3</h1>
+        <p>this is paragraph</p>
+    </section>
+</body>
+</html>

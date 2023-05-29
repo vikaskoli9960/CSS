@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position - css</title>
+    <style>
+        .element {
+            box-shadow: 0 0 5px rgb(0 0 0 / 25%);
+            width: 200px;
+            height: 80px;
+            margin: auto;
+            font: 400 16px/1.5 'system-ui';
+            position: absolute;
+            left: calc(50% - 40px);
+            top: calc(50% - 100px);
+            background-color: rgb(225, 66, 66);
+        }
+        .element h3 {
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            padding: 10px;
+            font: 800 1em/1.5 'system-ui';
+        }
+        .element {
+            padding: 10px;
+            margin: 0;
+        }
+        .position-absolute {
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+        .position-fixed {
+            background-color: rgb(175, 73, 238);
+            padding: 9px;
+            position: fixed;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgb(175, 73, 238);
+            z-index: 2;
+        }
+        .position-sticky {
+            background-color: blue;
+            position: sticky;
+            width: 120%;    
+            height: auto;
+            top: 0;
+            padding: 15px;
+            padding: 10px;
+        }
+        .parent {
+            background-color: rgb(223, 235, 135);
+            padding: 11px 12px;
+            position: relative;
+            height: 200px;
+            overflow: auto;
+        }
+        .gray-background {
+            background-color: rgb(40, 227, 59);
+        }
+    </style>
+</head>
+<body>
+    <p>this is some content</p>
+    <p>this is some content</p>
+
+    <section class="parent">
+        <section class="element">
+            <h3>this is heading</h3>
+            <p>this is popup description</p>
+        </section>
+    </section>
+    <img src="image.jpg/ananas.jpg" alt="person" width="100%">
+    <section class="parent">
+<p>The early modern period began in the 16th century, when the Mughal Empire conquered most of the Indian subcontinent,[22] signaling the proto-industrialization, becoming the biggest global economy and manufacturing power,[23] with a nominal GDP that valued a quarter of world GDP, superior to that of Europe.</p>        <section class="position-sticky">this is sticky element</section>
+<p>Genetic research has contributed to knowledge of the prehistory of the subcontinent's people in other respects. In particular, the level of genetic diversity in the region is extremely high. Indeed, only Africa's population is genetically more diverse. Related to this, there is strong evidence of ‘founder’ events in the subcontinent. By this is meant circumstances where a subgroup—such as a tribe—derives from a tiny number of ‘original’ individuals. Further, compared to most world regions, the subcontinent's people are relatively distinct in having practised comparatively high levels of endogamy.</p>    </section>
+<p>The earliest discovered instance ... of well-established, settled agricultural society is at Mehrgarh in the hills between the Bolan Pass and the Indus plain (today in Pakistan) (see Map 3.1). From as early as 7000 BCE, communities there started investing increased labor in preparing the land and selecting, planting, tending, and harvesting particular grain-producing plants. They also domesticated animals, including sheep, goats, pigs, and oxen (both humped zebu [Bos indicus] and unhumped [Bos taurus]). Castrating oxen, for instance, turned them from mainly meat sources into domesticated draft-animals as well."[45The earliest discovered instance ... of well-established, settled agricultural society is at Mehrgarh in the hills between the Bolan Pass and the Indus plain (today in Pakistan) (see Map 3.1). From as early as 7000 BCE, communities there started investing increased labor in preparing the land and selecting, planting, tending, and harvesting particular grain-producing plants. They also domesticated animals, including sheep, goats, pigs, and oxen (both humped zebu [Bos indicus] and unhumped [Bos taurus]). Castrating oxen, for instance, turned them from mainly meat sources into domesticated draft-animals as well."[45</p> 
+<section class="position-fixed">this is fixed position</section>
+
+</body>
+</html>
